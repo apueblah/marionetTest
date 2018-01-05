@@ -4,7 +4,7 @@
 
   I started off by creating [backbone-scaffolding](https://github.com/nilgradisnik/backbone-scaffolding) and eventually upgraded the project using Marionette
   
-## Web app
+## Web app ...
 
   The `public` folder containes all the files that will get you started
 
