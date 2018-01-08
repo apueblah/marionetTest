@@ -4,8 +4,9 @@ define([
   'view/header/header',
   'view/index/index',
   'view/settings/settings',
-  'view/footer/footer'
-], function (Marionette, App, HeaderView, IndexView, SettingsView, FooterView) {
+  'view/footer/footer',
+  'view/form/form'
+], function (Marionette, App, HeaderView, IndexView, SettingsView, FooterView, FormView) {
 
   return Marionette.Controller.extend({
 
@@ -19,6 +20,10 @@ define([
     },
     settings: function() {
       App.layout.content.show(new SettingsView());
+    },
+
+    form: function() {
+      App.layout.content.show(new FormView());
     }
   });
 });
