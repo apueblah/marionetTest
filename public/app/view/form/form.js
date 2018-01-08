@@ -1,10 +1,11 @@
 define([
   'marionette',
-
+  'models/form',
   'hbs!template/form/form'
-], function(Marionette, formTemplate) {
+], function(Marionette, FormModel, formTemplate) {
 
   return Marionette.ItemView.extend({
-    template: formTemplate
+    template: formTemplate,
+      models: FormModel
   });
 });
